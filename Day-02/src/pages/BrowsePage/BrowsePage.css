@@ -1,0 +1,111 @@
+.browse-page {
+  padding: calc(var(--cv-nav-height) + 40px) var(--cv-side-padding) 60px;
+  min-height: 100vh;
+}
+
+.browse-page__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.browse-page__title {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 500;
+}
+
+.browse-page__controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.browse-page__sort {
+  background: var(--cv-surface);
+  color: white;
+  border: 1px solid var(--cv-border);
+  padding: 8px 16px;
+  border-radius: var(--cv-radius-sm);
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.browse-page__sort:focus {
+  border-color: white;
+}
+
+.browse-page__view-toggle {
+  display: flex;
+  background: var(--cv-surface);
+  border: 1px solid var(--cv-border);
+  border-radius: var(--cv-radius-sm);
+  overflow: hidden;
+}
+
+.browse-page__view-btn {
+  padding: 8px 12px;
+  color: var(--cv-text-secondary);
+  transition: all 0.2s;
+}
+
+.browse-page__view-btn:hover {
+  color: white;
+}
+
+.browse-page__view-btn--active {
+  background: var(--cv-border);
+  color: white;
+}
+
+/* Grid View */
+.browse-page__grid--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  row-gap: 40px;
+}
+
+/* List View */
+.browse-page__grid--list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.browse-page__grid--list .movie-card {
+  width: 100%;
+  aspect-ratio: auto;
+  display: flex;
+  gap: 20px;
+  background: var(--cv-surface);
+  border-radius: var(--cv-radius-md);
+  padding: 20px;
+}
+
+.browse-page__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  color: var(--cv-text-secondary);
+  gap: 16px;
+  font-size: 1.2rem;
+}
+
+.browse-page__empty-icon {
+  font-size: 3rem;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .browse-page__grid--grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    row-gap: 20px;
+  }
+}

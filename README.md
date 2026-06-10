@@ -1,16 +1,43 @@
-# React + Vite
+# CineVerse: React Frontend Development Series
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the progression of a Netflix-clone application built with React, Vite, and modern frontend practices.
 
-Currently, two official plugins are available:
+## Folder Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project is divided into daily progressions, allowing learners to see the exact state of the application at the end of each session.
 
-## React Compiler
+### [Day 01: React Foundation](./Day-01/README.md)
+The foundational static build of the UI.
+- React + Vite Setup
+- Component Architecture (Navbar, Hero, Rows, Cards)
+- CSS Custom Properties & Responsive Design
+- Static Data Integration
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### [Day 02: Advanced UI, Auth, & Routing](./Day-02/README.md)
+*Focus: React Frontend Development (Static UI & Navigation Layer)*
+- Modular frontend architecture using React.js
+- Protected Routes & Navigation flow (`react-router-dom`)
+- API-ready frontend using Axios (conceptually)
+- Simulated Authentication flow using JWT (UI-level, `localStorage`)
+- Global State Management (`useContext` for Auth and My List)
+- Dynamic UI updates based on user interaction (Add to List, Profile Select)
+- Pre-auth Landing, Login, and Signup pages
+- Complete post-auth experience (Home, Browse, TV Shows, My List, Search)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To run any specific day's code, navigate into that directory and start the dev server:
+
+```bash
+cd Day-02
+npm install
+npm run dev
+```
+
+## Technologies Used
+- React 19
+- Vite 8
+- React Router DOM 7
+- Axios
+- React Icons
+- Vanilla CSS (Design System)
