@@ -1,5 +1,5 @@
 # CineVerse: React Frontend Development Series
-
+http://localhost:5173/
 This repository contains the progression of a Netflix-clone application built with React, Vite, and modern frontend practices.
 
 ## Folder Structure
