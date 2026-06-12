@@ -1,14 +1,5 @@
 # Day 03: Spring Boot Fundamentals & Authentication Service
 
-By the end of this session, learners will be able to:
-* Understand backend system design using Spring Boot
-* Implement a layered architecture for scalable services
-* Design and integrate relational databases using PostgreSQL
-* Develop secure authentication APIs using JWT
-* Apply Role-Based Access Control (RBAC)
-* Implement data validation, encryption, and error handling
-* Integrate backend APIs with frontend systems
-
 ## Backend System Perspective
 Backend systems are responsible for:
 * Business logic execution
@@ -195,45 +186,3 @@ Frontend communicates via HTTP APIs.
 }
 ```
 
-**Best Practices**
-* Use meaningful messages
-* Maintain consistent structure
-* Avoid exposing sensitive data
-
-**Academic Insight:** Error handling improves system robustness and user experience.
-
-## Learning Outcomes
-Students will be able to:
-* Design backend services using layered architecture
-* Implement secure authentication APIs
-* Apply RBAC for access control
-* Integrate database with backend systems
-* Handle validation and errors effectively
-
-## Deliverables of Day 03
-* Fully functional Authentication Service
-* User registration & login APIs
-* JWT-based authentication
-* Role-based access control implemented
-* PostgreSQL integration completed
-* Error handling and validation applied
-
-## Viva Questions
-1. What is Spring Boot and how does it simplify backend development?
-2. Explain layered architecture in backend systems.
-3. What is the role of JPA and Hibernate?
-4. What is an Entity and how is it mapped to a database?
-5. Why are DTOs used instead of entities?
-6. What is validation and why is it important?
-7. Explain REST API principles.
-8. What is JWT and how does it work?
-9. What are the advantages of stateless authentication?
-10. Explain Role-Based Access Control with examples.
-11. What is BCrypt and why is it used?
-12. How does backend integrate with frontend?
-13. What are common types of API errors?
-14. Why is error handling important in backend systems?
-15. What is the difference between authentication and authorization?
-16. What are best practices for API design?
-17. How does database design impact backend performance?
-18. What are the security considerations in authentication systems?
