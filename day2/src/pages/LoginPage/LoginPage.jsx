@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import heroBg from '../../assets/hero.png';
 import './LoginPage.css';
 
 export default function LoginPage() {
@@ -25,12 +26,12 @@ export default function LoginPage() {
   return (
     <div className="login-page">
       <div className="login-page__background">
-        <img src="/assets/hero.png" alt="background" />
+        <img src={heroBg} alt="" />
         <div className="login-page__overlay"></div>
       </div>
       
+      <h1 className="login-page__logo">CINEVERSE</h1>
       <div className="login-page__content">
-        <h1 className="login-page__logo">CINEVERSE</h1>
         <div className="login-page__card">
           <h2>{isLogin ? 'Sign In' : 'Sign Up'}</h2>
           <form onSubmit={handleSubmit}>

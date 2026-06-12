@@ -9,11 +9,11 @@ export default function BookingPage() {
   const navigate = useNavigate();
   const [selectedSeats, setSelectedSeats] = useState([]);
   
-  // Find the movie by id
-  let movie = FEATURED.id === parseInt(id) ? FEATURED : null;
+  // Find the movie by id (IDs are strings like 't1', 'p1', 'a1')
+  let movie = FEATURED.id === id ? FEATURED : null;
   if (!movie) {
     for (const cat of categories) {
-      const found = cat.movies.find(m => m.id === parseInt(id));
+      const found = cat.movies.find(m => m.id === id);
       if (found) {
         movie = found;
         break;

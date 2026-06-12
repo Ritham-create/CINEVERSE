@@ -25,8 +25,10 @@ The repository is organized by development phase:
 
 ```
 CineVerse/
-├── day1/          # Day 1 — Core UI & Component Architecture
-└── day2/          # Day 2 — Auth, Routing, Booking, 3D & API Layer
+├── day1/          # Day 1 — Core UI & Component Architecture (React)
+├── day2/          # Day 2 — Auth, Routing, Booking, 3D & API Layer (React)
+├── day3/          # Day 3 — Authentication Service (Spring Boot Backend)
+└── day4/          # Day 4 — API Gateway (Spring Cloud Gateway)
 ```
 
 Each folder is a **self-contained React + Vite project** that can be run independently.
@@ -125,6 +127,48 @@ src/
 | Manage Users | ❌ | ❌ | ✅ |
 
 > **Login hints:** Use `admin@cineverse.com` for Admin, `owner@cineverse.com` for Theatre Owner, or any other email for User role.
+
+---
+
+## 🗓️ Day 3 — Backend Authentication Service
+
+> The foundation of the backend architecture. Provides secure, stateless authentication and authorization using Spring Boot, PostgreSQL, and JWT.
+
+### Features
+- 🔐 **Stateless Authentication** — JSON Web Tokens (JWT) for secure, scalable session management
+- 🛡️ **Role-Based Access Control (RBAC)** — Enforces USER, THEATRE_OWNER, and ADMIN roles at the API level
+- 💾 **Data Persistence** — PostgreSQL database integration via Spring Data JPA
+- 🔒 **Security** — BCrypt password hashing and Spring Security filter chains
+- ⚠️ **Validation & Error Handling** — Global exception handling and DTO validation
+
+### Tech Stack
+| Tech | Purpose |
+|------|---------|
+| Java 17 | Core programming language |
+| Spring Boot 3.2 | Backend framework |
+| Spring Security | Authentication & Authorization |
+| PostgreSQL | Relational database |
+| Spring Data JPA | ORM and database access |
+
+---
+
+## 🗓️ Day 4 — API Gateway & Microservices Communication
+
+> The central entry point for the backend system, built with Spring Cloud Gateway to route and secure all microservice requests.
+
+### Features
+- 🚪 **Centralized Entry Point** — Abstracted internal microservice structure from the frontend
+- 🔀 **Dynamic Routing** — Request routing to appropriate microservices (Auth, Movie, Booking)
+- 🛂 **Centralized JWT Validation** — Global filters to intercept and validate tokens before forwarding
+- ⚡ **Reactive Architecture** — Built on Spring WebFlux and WebClient for non-blocking, high-throughput communication
+
+### Tech Stack
+| Tech | Purpose |
+|------|---------|
+| Spring Cloud Gateway | Reactive API Gateway |
+| Spring WebFlux | Non-blocking reactive programming |
+| WebClient | Asynchronous inter-service HTTP calls |
+| Eureka (Optional) | Service discovery |
 
 ---
 

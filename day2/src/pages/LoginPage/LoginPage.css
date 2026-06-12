@@ -36,14 +36,14 @@
 }
 
 .login-page__logo {
-  position: absolute;
+  position: fixed;
   top: 24px;
   left: 4%;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
   color: var(--cv-red);
   letter-spacing: 2px;
-  z-index: 10;
+  z-index: 20;
 }
 
 .login-page__content {

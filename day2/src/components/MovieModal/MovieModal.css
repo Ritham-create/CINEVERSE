@@ -16,9 +16,12 @@
   width: 90%;
   max-width: 900px;
   background: var(--cv-surface);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: var(--cv-radius-xl);
   overflow: hidden;
   box-shadow: var(--cv-shadow-xl);
+  border: 1px solid var(--cv-border-light);
   animation: fadeInScale 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
   margin: 30px 0;
 }
